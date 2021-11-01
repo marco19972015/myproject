@@ -1,0 +1,76 @@
+package com.company.chapter2;
+import java.util.Scanner;
+
+public class SmallestLargest {
+    public static void main(String[] args){
+        // Explain what this program will do
+        System.out.println("This program takes three integers and displays the sum, average, product, smallest and " +
+                "largest of the numbers");
+
+        // Create a new Scanner called input
+        Scanner input = new Scanner(System.in);
+
+        // Promp user to enter first integer
+        System.out.print("Please enter the first integer: ");
+        int x = input.nextInt();
+
+        // Promp user to enter second integer
+        System.out.print("Please enter the second integer: ");
+        int y = input.nextInt();
+
+        // Promp user to enter third integer
+        System.out.print("Please enter the third integer: ");
+        int z = input.nextInt();
+
+        // Display sum
+        int sum = x + y + z;
+        System.out.printf("Sum of three integers is %d%n", sum);
+
+        // Display average
+        int average = (x + y + z) / 3;
+        System.out.printf("The average is %d%n", average);
+
+        // Display product
+        int product = x * y * z;
+        System.out.printf("The product is %d%n", product);
+
+        // Display largest
+        if (x > y){  // Checks to see if x is greater than y, if so continue
+            if (x > z){  // Checks to see if x is greater than z, if so print statement
+                System.out.printf("%d is the largest number %n", x);
+            }
+        }
+
+        if (y > x){  // Checks to see if y is greater than x, if so continue
+            if (y > z){  // Checks to see if y is greater than z, if so print statement
+                System.out.printf("%d is the largest number %n", y);
+            }
+        }
+
+        if (z > x){  // Checks to see if z is greater than x, if so continue
+            if (z > y){  // checks to see if z is greater than y, if so print statement
+                System.out.printf("%d is the largest number %n", z);
+            }
+        }
+
+        // display smallest
+        if (x < y){  // Checks to see if x is smaller than y, if so continue
+            if (x < z){  // Checks to see if x is smaller than z, if so print statement
+                System.out.printf("%d is the smallest number %n", x);
+            }
+        }
+
+        if (y < x){  // Checks to see if y is smaller than x, if so continue
+            if (y < z){  // Checks to see if z is smaller than z, if so print statement
+                System.out.printf("%d is the smallest number %n", y);
+            }
+        }
+
+        if (z < x){  // Checks to see if z is less than x, if so continue
+            if (z < y){  // checks to see if z is less than y, if so print statement
+                System.out.printf("%d is the smallest number %n", z);
+            }
+        }
+
+    }
+}
